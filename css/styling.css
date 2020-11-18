@@ -1,0 +1,40 @@
+body{
+    width: 100%;
+}
+.dash{
+    width: 30vh;
+    margin-top: -25px;
+}
+.first{
+    background-color: lightgrey;
+}
+.card p{
+    font-size: 14px;
+}
+.card-footer a{
+    font-size: 14px;
+    text-align: left;
+}
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color:rgba(0, 0, 0, 0);
+    }
+    .cards{
+         
+         
+    }
+    .charts{
+         
+          
+    }
+    #myChart {
+width: 100px;
+height: 100px;
+    }
