@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>voting system</title>
+
+    <link rel="stylesheet" href="./css/styling.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
+      <a class="navbar-brand">Voting Admin</a>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
+    <div class="d-flex">
+      <div class="dash" id="sidebar-wrapper">
+        <div class="sidebar-heading"></div>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action"
+            >Dashboard</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Shortcuts</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Overview</a
+          >
+          <a href="#" class="list-group-item list-group-item-action">Events</a>
+          <a href="#" class="list-group-item list-group-item-action">Profile</a>
+          <a href="#" class="list-group-item list-group-item-action">Status</a>
+        </div>
+      </div>
+
+      <div class="container cards">
+        <div class="row">
+          <div class="col-xxl-3 col-lg-6">
+            <div class="card bg-primary text-white mb-4">
+              <div class="card-body">
+                <div class="justify-content-between align-items-center">
+                  <div class="mr-3">
+                    <p class="text-white-75 small">Registered Voting</p>
+                    <h5 class="text-lg font-weight-bold">40,000 +</h5>
+                  </div>
+                  <div
+                    class="card-footer d-flex align-items-center justify-content-between"
+                  >
+                    <a class="small text-white stretched-link" href="#"
+                      >View Report
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xxl-3 col-lg-6">
+            <div class="card bg-warning text-white mb-4">
+              <div class="card-body">
+                <div class="justify-content-between align-items-center">
+                  <div class="mr-3">
+                    <p class="text-white-75 small">Pending Voting</p>
+                    <h5 class="text-lg font-weight-bold">20,000 +</h5>
+                  </div>
+                  <div
+                    class="card-footer d-flex align-items-center justify-content-between"
+                  >
+                    <a class="small text-white stretched-link" href="#"
+                      >View Report
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xxl-3 col-lg-6">
+            <div class="card bg-success text-white mb-4">
+              <div class="card-body">
+                <div class="justify-content-between align-items-center">
+                  <div class="mr-3">
+                    <p class="text-white-75 small">Total Voting</p>
+                    <h5 class="text-lg font-weight-bold">40,00,000 +</h5>
+                  </div>
+                  <div
+                    class="card-footer d-flex align-items-center justify-content-between"
+                  >
+                    <a class="small text-white stretched-link" href="#"
+                      >View Report
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xxl-3 col-lg-6">
+            <div class="card bg-danger text-white mb-4">
+              <div class="card-body">
+                <div class="justify-content-between align-items-center">
+                  <div class="mr-3">
+                    <p class="text-white-75 small">Fack Voting</p>
+                    <h5 class="text-lg font-weight-bold">1,000 +</h5>
+                  </div>
+                  <div
+                    class="card-footer align-items-start justify-content-between"
+                  >
+                    <a class="small text-white stretched-link" href="#"
+                      >View Report
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <div class="container mr-3 charts">
+      <div class="row">
+        <div class="col-6">
+          <div class="card bg-light mb-3">
+            <div class="card-header">Vote chart</div>
+            <div class="card-body">
+              <canvas id="myChart"></canvas>
+              <script>
+                var ctx = document.getElementById("myChart").getContext("2d");
+                var myChart = new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                    labels: [
+                      "Counter 1",
+                      "Counter 2",
+                      "Counter 3",
+                      "Counter 4",
+                      "Counter 5",
+                      "Counter 6",
+                    ],
+                    datasets: [
+                      {
+                        label: "Votes",
+                        data: [5, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                          "rgba(255, 99, 132, 0.2)",
+                          "rgba(54, 162, 235, 0.2)",
+                          "rgba(255, 206, 86, 0.2)",
+                          "rgba(75, 192, 192, 0.2)",
+                          "rgba(153, 102, 255, 0.2)",
+                          "rgba(255, 159, 64, 0.2)",
+                        ],
+                        borderColor: [
+                          "rgba(255, 99, 132, 1)",
+                          "rgba(54, 162, 235, 1)",
+                          "rgba(255, 206, 86, 1)",
+                          "rgba(75, 192, 192, 1)",
+                          "rgba(153, 102, 255, 1)",
+                          "rgba(255, 159, 64, 1)",
+                        ],
+                        borderWidth: 1,
+                      },
+                    ],
+                  },
+                  options: {
+                    scales: {
+                      yAxes: [
+                        {
+                          ticks: {
+                            beginAtZero: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card bg-light mb-3">
+            <div class="card-header">Vote chart</div>
+            <div class="card-body">
+              <canvas id="mylChart"></canvas>
+              <script>
+                var ctx = document.getElementById("mylChart").getContext("2d");
+                var mylChart = new Chart(ctx, {
+                  type: "line",
+                  data: {
+                    labels: [
+                      "Counter 1",
+                      "Counter 2",
+                      "Counter 3",
+                      "Counter 4",
+                      "Counter 5",
+                      "Counter 6",
+                    ],
+                    datasets: [
+                      {
+                        label: "Votes",
+                        data: [5, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                          "rgba(255, 99, 132, 0.2)",
+                          "rgba(54, 162, 235, 0.2)",
+                          "rgba(255, 206, 86, 0.2)",
+                          "rgba(75, 192, 192, 0.2)",
+                          "rgba(153, 102, 255, 0.2)",
+                          "rgba(255, 159, 64, 0.2)",
+                        ],
+                        borderColor: [
+                          "rgba(255, 99, 132, 1)",
+                          "rgba(54, 162, 235, 1)",
+                          "rgba(255, 206, 86, 1)",
+                          "rgba(75, 192, 192, 1)",
+                          "rgba(153, 102, 255, 1)",
+                          "rgba(255, 159, 64, 1)",
+                        ],
+                        borderWidth: 1,
+                      },
+                    ],
+                  },
+                  options: {
+                    scales: {
+                      yAxes: [
+                        {
+                          ticks: {
+                            beginAtZero: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
