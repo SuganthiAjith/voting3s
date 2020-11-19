@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
+    
 
     <div class="d-flex" id="wrapper">
   
@@ -28,8 +29,8 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
   
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom"> 
+          <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>  -->
   
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,71 +58,186 @@
             </ul>
           </div>
         </nav>
+        <header class="head">
+          <div class="row">
+            <div class="col-12">
+              <h1>Dashboard For Voting</h1>
+            </div>
+          </div>
+        </header>
   
-        <div class="container-fluid">
-        <div class="row">
-          <div class="col-3">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="container cards mt-4">
+          <div class="row">
+            <div class="col-xxl-3 col-lg-6">
+              <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                  <div class="justify-content-between align-items-center">
+                    <div class="mr-3">
+                      <p class="text-white-75 small">Registered Voting</p>
+                      <h5 class="text-lg font-weight-bold">40,000 +</h5>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between"
+                    >
+                      <a class="small text-white stretched-link" href="#"
+                        >View Report
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-xxl-3 col-lg-6">
+              <div class="card bg-warning text-white mb-4">
+                <div class="card-body">
+                  <div class="justify-content-between align-items-center">
+                    <div class="mr-3">
+                      <p class="text-white-75 small">Pending Voting</p>
+                      <h5 class="text-lg font-weight-bold">20,000 +</h5>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between"
+                    >
+                      <a class="small text-white stretched-link" href="#"
+                        >View Report
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-3">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="row">
+            <div class="col-xxl-3 col-lg-6">
+              <div class="card bg-success text-white mb-4">
+                <div class="card-body">
+                  <div class="justify-content-between align-items-center">
+                    <div class="mr-3">
+                      <p class="text-white-75 small">Total Voting</p>
+                      <h5 class="text-lg font-weight-bold">40,00,000 +</h5>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between"
+                    >
+                      <a class="small text-white stretched-link" href="#"
+                        >View Report
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-3">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+            <div class="col-xxl-3 col-lg-6">
+              <div class="card bg-danger text-white mb-4">
+                <div class="card-body">
+                  <div class="justify-content-between align-items-center">
+                    <div class="mr-3">
+                      <p class="text-white-75 small">Fack Voting</p>
+                      <h5 class="text-lg font-weight-bold">1,000 +</h5>
+                    </div>
+                    <div
+                      class="card-footer align-items-start justify-content-between"
+                    >
+                      <a class="small text-white stretched-link" href="#"
+                        >View Report
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-3">
-            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-              <div class="card-header">Header</div>
-              <div class="card-body">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-
-            
           </div>
         </div>
-        </div>
-      </div>
+      
       <!-- /#page-content-wrapper -->
   
+    </div>
+    
     </div>
     <!-- /#wrapper -->
   
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+    <script src="node_modules/echarts/dist/echarts.js"></script>
+     <div class="charts container mr-5 ">
+       <div class="row">
+         <div class="col-6">
+          
+              <canvas id="main"></canvas>
+              <script type="text/javascript">
+                // based on prepared DOM, initialize echarts instance
+                var myChart = echarts.init(document.getElementById('main'));
+          
+                // specify chart configuration item and data
+               var option = {
+    backgroundColor: '#2c343c',
+    series : [
+        {
+            name: 'survey',
+            type: 'pie',
+            radius: '55%',
+            data:[
+                {value:235, name:'party1'},
+                {value:274, name:'party2'},
+                {value:310, name:'party3'},
+                {value:335, name:'party4'},
+                {value:400, name:'party5'}
+            ],
+            roseType: 'angle',
+            label: {
+                normal: {
+                    textStyle: {
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    lineStyle: {
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    shadowBlur: 200,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+          
+                // use configuration item and data specified to show chart
+                myChart.setOption(option);
+            </script>
+         </div>
+         <!-- <div class="col-6">
+          <div class="card bg-light mb-3 ">
+            <div class="card-header">last year survey</div>
+            <div class="card-body">
+              <canvas id="main"></canvas>
+            </div>
+          </div>
+         </div> -->
+
+       </div>
+     </div>
+    
+     
+    <!-- <canvas id="main"></canvas> -->
+    
   
     <!-- Menu Toggle Script -->
-    <script>
+    <!-- <script>
       $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
       });
-    </script>
+    </script> -->
   
   </body>
 </html>
