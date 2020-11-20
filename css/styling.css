@@ -54,6 +54,10 @@ nav{
     margin-top: 100px;
     color: white;
 }
+.top h1{
+color: white;
+padding: 10px;
+}
 .dash-box{
     background-color: white;
     color: black;
