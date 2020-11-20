@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>voting system</title>
 
-    <link rel="stylesheet" href="./css/styling.css" />
+    <link rel="stylesheet" href="../css/styling.css" />
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
     <nav
       class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
     >
-        <img class="img-fluid" src="./images/vilpowerLogo.png" />
+        <img class="img-fluid" src="../images/vilpowerLogo.png" />
       
       <form class="form-inline">
         <input
@@ -40,20 +40,20 @@
 
       <div class="dash" id="sidebar-wrapper">
 
-        <div class="list-group list-group-flush dashboard" >
+        <div class="list-group list-group-flush dashboard " >
           <div class="sidebar-heading">
              Voting Admin 
           </div>
 
-          <a href="app.html" class="list-group-item"
+          <a href="../app.html" class="list-group-item"
             ><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
           >
 
-          <a href="./forms/people.html" class="list-group-item"
+          <a href="people.html" class="list-group-item"
             ><i class="fa fa-dashcube" aria-hidden="true"></i
             >&#9;&#9;People List</a
           >
-          <a href="./forms/addprofile.html" class="list-group-item  "
+          <a href="../forms/addprofile.html" class="list-group-item  "
             ><i class="fa fa-superpowers" aria-hidden="true"></i
             >&#9;&#9;Add Profile</a
           >
@@ -86,92 +86,62 @@
             </p>
           </div>
           <div class="col-xxl-2 col-lg-4">
-            <img class="img-fluid" src="./images/at-work.svg" />
+            <img class="img-fluid" src="../images/at-work.svg" />
           </div>
         </div>
-        <div class="row cards-row">
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-primary text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Registered Voting</p>
-                    <h5 class="text-lg font-weight-bold">40,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-warning text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Pending Voting</p>
-                    <h5 class="text-lg font-weight-bold">20,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row people-table p-3">
+        <div class="col-xxl-12 col-lg-12">
+           <table class="table table-hover table-bordered ">
+                <thead>
+                    <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">District Name</th>
+                    <th scope="col">No of Volume</th>
+                    <th scope="col">Majority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>Tenkasi</td>
+                    <td>32</td>
+                    <td>mmmm</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>Madurai</td>
+                    <td>43</td>
+                    <td>kkkk</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td>Tirunelveli</td>
+                    <td>64</td>
+                    <td>gggg</td>
+                    </tr>
+                     <tr>
+                    <th scope="row">1</th>
+                    <td>Tenkasi</td>
+                    <td>32</td>
+                    <td>mmmm</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>Madurai</td>
+                    <td>43</td>
+                    <td>kkkk</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">3</th>
+                    <td>Tirunelveli</td>
+                    <td>64</td>
+                    <td>gggg</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="row">
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-success text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Total Voting</p>
-                    <h5 class="text-lg font-weight-bold">40,00,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-danger text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Fake Voting</p>
-                    <h5 class="text-lg font-weight-bold">1,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer align-items-start justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="row">
+         <div class="row">
           <div class="col-xxl-3 col-lg-6">
             <div class="card bg-light mb-3">
               <div class="card-header">Vote chart</div>
@@ -192,9 +162,9 @@
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/chart.js/dist/Chart.js"></script>
     <script>
       var ctx = document.getElementById("myChart").getContext("2d");
       var myChart = new Chart(ctx, {
