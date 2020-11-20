@@ -1,3 +1,10 @@
+.head{
+
+  padding: 5%;
+  text-align: left;
+  color: white;
+  background-color: blue;
+}
 #wrapper {
     overflow-x: hidden;
  }
@@ -41,4 +48,10 @@
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+.charts{
+  width: 50%;
+}
+.card-body{
+  width: 50rem;
 }
