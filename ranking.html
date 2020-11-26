@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting system</title>
+
+    <link rel="stylesheet" href="./css/styling.css"/>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- <=========Header========> -->
+    <nav class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top">
+        <img class="img-fluid" src="./images/vilpowerLogo.png" />
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </form>
+    </nav>
+    
+    <!-- ========body of dashboard====== -->
+
+    <div class="d-flex" id="wrapper">
+
+         <!-- ===========side bar======== -->
+
+        <div class="dash" id="sidebar-wrapper">
+
+            <div class="list-group list-group-flush dashboard">
+                <div class="sidebar-heading">
+                    Voting Admin
+                </div>
+
+                <a href="app.html" class="list-group-item"><i class="fa fa-xing"
+                        aria-hidden="true"></i>&#9;&#9;Dashboard</a>
+
+                <a href="./forms/people.html" class="list-group-item"><i class="fa fa-dashcube"
+                        aria-hidden="true"></i>&#9;&#9;People List</a>
+                <a href="./forms/addprofile.html" class="list-group-item  "><i class="fa fa-superpowers"
+                        aria-hidden="true"></i>&#9;&#9;Add Profile</a>
+                <a href="#" class="list-group-item"><i class="fa fa-snowflake-o"
+                        aria-hidden="true"></i>&#9;&#9;Events</a>
+                <a href="#" class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i>&#9;&#9;Profile</a>
+                <a href="#" class="list-group-item"><i class="fa fa-compass" aria-hidden="true"></i>&#9;&#9;Status</a>
+            </div>
+        </div>
+
+        <!-- ======content====== -->
+        <div class="container cards cards-bg">
+            <div class="row container dash-head">
+                <div class="col-xxl-12 col-lg-12 top">
+                  <h1>Voting Process System</h1>
+                  
+                </div>
+                </div>
+                <div class="row dash-box ml-1">
+                    <div class="col-xxl-4 col-lg-8 dashbox-col">
+                      <h1>Welcome to Voting Admin Pro!</h1>
+                      <p class="lead">
+                        When people cast their vote, they are actually voting for a group
+                        of people called electors.
+                      </p>
+                    </div>
+                    <div class="col-xxl-2 col-lg-4">
+                      <img class="img-fluid" src="./images/at-work.svg" />
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header text-light">
+                     <h3>Ranking</h3> 
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <div class="row people-table p-3 bg-light">
+                          <div class="col-xxl-12 col-lg-12">
+                             <table class="table table-hover ">
+                                  <thead>
+                                      <tr>
+                                      <th scope="col">No</th>
+                                      <th scope="col">District Name</th>
+                                      <th scope="col">No of Volume</th>
+                                      <th scope="col">Majority</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                      <td scope="row">1</td>
+                                      <td>Tenkasi</td>
+                                      <td>32</td>
+                                      <td>mmmm</td>
+                                      </tr>
+                                      <tr>
+                                      <td scope="row">2</td>
+                                      <td>Madurai</td>
+                                      <td>43</td>
+                                      <td>kkkk</td>
+                                      </tr>
+                                      <tr>
+                                      <td scope="row">3</td>
+                                      <td>Tirunelveli</td>
+                                      <td>64</td>
+                                      <td>gggg</td>
+                                      </tr>
+                                       <tr>
+                                      <td scope="row">1</td>
+                                      <td>Tenkasi</td>
+                                      <td>32</td>
+                                      <td>mmmm</td>
+                                      </tr>
+                                      <tr>
+                                      <td scope="row">2</td>
+                                      <td>Madurai</td>
+                                      <td>43</td>
+                                      <td>kkkk</td>
+                                      </tr>
+                                      <tr>
+                                      <td scope="row">3</td>
+                                      <td>Tirunelveli</td>
+                                      <td>64</td>
+                                      <td>gggg</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          </div>
+                       
+                      </blockquote>
+                    </div>
+                  </div>
+                  
+        
+
+    </div>
+
+
+
+</body>
+
+</html>
