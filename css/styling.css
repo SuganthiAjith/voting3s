@@ -79,7 +79,7 @@ padding: 10px;
 .dash-box h1{
     font-size: 30px;
     color: #0061f2;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .dash-box img {
     padding: 30px;
@@ -313,21 +313,36 @@ padding: 10px;
   }
   
   .row1 .cell:nth-child(1) {
-    width: 360px;
+    width: 190px;
     padding-left: 40px;
   }
   
   .row1 .cell:nth-child(2) {
-    width: 160px;
+    width: 190px;
   }
   
   .row1 .cell:nth-child(3) {
-    width: 250px;
+    width: 190px;
   }
   
   .row1 .cell:nth-child(4) {
     width: 190px;
   }
+  .row1 .cell:nth-child(5) {
+    width: 190px;
+  }
+  .row1 .cell:nth-child(6)
+  {
+    width: 190px;
+   
+  }
+  .row1 .cell:nth-child(7)
+  {
+    width: 190px;
+   
+  }
+  
+
   
   
   .table, .row1 {
