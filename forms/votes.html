@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>voting system</title>
 
-    <link rel="stylesheet" href="./css/styling.css" />
+    <link rel="stylesheet" href="../css/styling.css" />
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
     <nav
       class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
     >
-        <img class="img-fluid" src="./images/vilpowerLogo.png" />
+        <img class="img-fluid" src="../images/vilpowerLogo.png" />
       
       <form class="form-inline">
         <input
@@ -40,156 +40,55 @@
 
       <div class="dash" id="sidebar-wrapper">
 
-        <div class="list-group list-group-flush dashboard" >
+        <div class="list-group list-group-flush dashboard " >
           <div class="sidebar-heading">
              Voting Admin 
           </div>
 
-          <a href="app.html" class="list-group-item"
+          <a href="../app.html" class="list-group-item"
             ><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
           >
 
-          <a href="./forms/party.html" class="list-group-item"
+          <a href="../forms/party.html" class="list-group-item"
             ><i class="fa fa-dashcube" aria-hidden="true"></i
             >&#9;&#9;Parties</a
           >
-          <a href="./forms/addprofile.html" class="list-group-item  "
+          <a href="../forms/addprofile.html" class="list-group-item  "
             ><i class="fa fa-superpowers" aria-hidden="true"></i
             >&#9;&#9;Add Profile</a
           >
-          <a href="./forms/candidate.html" class="list-group-item"
+          <a href="../forms/candidate.html" class="list-group-item"
             ><i class="fa fa-snowflake-o" aria-hidden="true"></i
             >&#9;&#9;Candidates</a
           >
-          <a href="./forms/zones.html" class="list-group-item"
+          <a href="../forms/zones.html" class="list-group-item"
             ><i class="fa fa-user" aria-hidden="true"></i>&#9;&#9;Zones</a
           >
-          <a href="./forms/votes.html" class="list-group-item"
+          <a href="votes.html" class="list-group-item"
             ><i class="fa fa-compass" aria-hidden="true"></i>&#9;&#9;Votes</a
           >
         </div>
       </div>
 
-      <div class="container cards cards-bg">
+      <div class="container cards cards-bgpy">
         <div class="row container dash-head">
-          <div class="col-xxl-12 col-lg-12 top">
-            <h1 class="text-light">Voting Process System</h1>
-            
+          <div class="col-xxl-12 col-lg-12">
+            <h1 class="text-light">Votes List</h1>
+             
           </div>
         </div>
         <div class="row dash-box ml-1">
           <div class="col-xxl-4 col-lg-8 dashbox-col">
-            <h1 class="text-align-left">Welcome to Voting Admin Pro!</h1>
-            <p class="lead ">
+            <h1>Welcome to Votes List!</h1>
+            <p class="lead">
               When people cast their vote, they are actually voting for a group
               of people called electors.
             </p>
           </div>
           <div class="col-xxl-2 col-lg-4">
-            <img class="img-fluid" src="./images/at-work.svg" />
+            <img class="img-fluid" src="../images/at-work.svg" />
           </div>
         </div>
-        <div class="row cards-row">
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-primary text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Registered Voting</p>
-                    <h5 class="text-lg font-weight-bold">40,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-warning text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Pending Voting</p>
-                    <h5 class="text-lg font-weight-bold">20,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-success text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Total Voting</p>
-                    <h5 class="text-lg font-weight-bold">40,00,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer d-flex align-items-center justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-danger text-white mb-4">
-              <div class="card-body">
-                <div class="justify-content-between align-items-center">
-                  <div class="mr-3">
-                    <p class="text-white-75 small">Fake Voting</p>
-                    <h5 class="text-lg font-weight-bold">1,000 +</h5>
-                  </div>
-                  <div
-                    class="card-footer align-items-start justify-content-between"
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Report
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-light mb-3">
-              <div class="card-header">Vote chart</div>
-              <div class="card-body">
-              <div id="charts" style="width: 500px; height: 300px;"></div>
-            </div>
-            </div>
-          </div>
-          <div class="col-xxl-3 col-lg-6">
-            <div class="card bg-light mb-3">
-              <div class="card-header">Vote chart</div>
-              <div class="card-body">
-                <div id="main" style="width: 500px; height: 300px;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         <div class="row">
           <div class="col-xxl-12 col-lg-12">
             <div class="card bg-light">
@@ -343,80 +242,13 @@
             </div>
           </div>
         </div>
-        
-
-
-
+       
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/echarts/dist/echarts.js"></script>
-    <script src="node_modules/chart.js/dist/Chart.js"></script>
-
-    <script>
-      var myChart= echarts.init(document.getElementById('main'));
-      option = {
-    color: ['#4f72e3'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            
-            type: 'shadow'        
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: ['TVL', 'Thk', 'Tk', 'Nk', 'Chennai', 'Kovai', 'Theni'],
-            axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: 'result',
-            type: 'bar',
-            barWidth: '40%',
-            data: [10000, 5200, 20000, 33400, 39000, 33000, 22000]
-        }
-    ]
-};
-myChart.setOption(option);
-
-</script>
-
-<script>
-  var myChart= echarts.init(document.getElementById('charts'));
-  option = {
-color: ['#4f72e3'],
-xAxis: {
-        type: 'category',
-        data: ['2000', '2004', '2008', '2012', '2016', '2020']
-    },
-    yAxis: {
-        type: 'value'
-    },
-    series: [{
-        data: [100, 50, 200, 150, 300, 250,],
-        type: 'line',
-        smooth: true
-    }]
-};
-myChart.setOption(option);
-</script>
-
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/chart.js/dist/Chart.js"></script>
+     
   </body>
 </html>
