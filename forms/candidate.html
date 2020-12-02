@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>voting system</title>
 
     <link rel="stylesheet" href="../css/styling.css" />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
-    >
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top">
         <img class="img-fluid" src="../images/vilpowerLogo.png" />
-      
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
           Search
         </button>
-      </form>
+        </form>
     </nav>
 
     <div class="d-flex" id="wrapper">
+        <div class="dash" id="sidebar-wrapper">
+            <div class="list-group list-group-flush dashboard">
+                <div class="sidebar-heading">Voting Admin</div>
 
-      <div class="dash" id="sidebar-wrapper">
-
-        <div class="list-group list-group-flush dashboard " >
-          <div class="sidebar-heading">
-             Voting Admin 
-          </div>
-
-          <a href="../app.html" class="list-group-item"
-            ><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
+                <a href="../app.html" class="list-group-item"><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
           >
 
           <a href="../forms/party.html" class="list-group-item"
-            ><i class="fa fa-dashcube" aria-hidden="true"></i
-            >&#9;&#9;Parties</a
+            ><i class="fa fa-dashcube" aria-hidden="true"></i>&#9;&#9;Parties</a
           >
-          <a href="../forms/addprofile.html" class="list-group-item  "
-            ><i class="fa fa-superpowers" aria-hidden="true"></i
-            >&#9;&#9;Add Profile</a
+          <a href="../forms/addprofile.html" class="list-group-item"
+            ><i class="fa fa-superpowers" aria-hidden="true"></i>&#9;&#9;Add
+            Profile</a
           >
           <a href="candidate.html" class="list-group-item"
             ><i class="fa fa-snowflake-o" aria-hidden="true"></i
@@ -74,7 +55,6 @@
         <div class="row container dash-head">
           <div class="col-xxl-12 col-lg-12">
             <h1 class="text-light">Candidates List</h1>
-             
           </div>
         </div>
         <div class="row dash-box ml-1">
@@ -92,163 +72,114 @@
         <div class="row">
           <div class="col-xxl-12 col-lg-12">
             <div class="card bg-light">
-              <div class="card-header"><h3>Votes</h3></div>
+              <div class="card-header">
+                <h3 class="text-primary">Candidates</h3>
+              </div>
               <div class="card-body">
                 <div class="limiter">
                   <div class="container-table100">
-                      <div class="wrap-table100">
-                              <div class="table">
-          
-                                  <div class="row1 header">
-                                      <div class="cell">
-                                          Full Name
-                                      </div>
-                                      <div class="cell">
-                                          Age
-                                      </div>
-                                      <div class="cell">
-                                          Job Title
-                                      </div>
-                                      <div class="cell">
-                                          Location
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Vincent Williamson
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          31
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          iOS Developer
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          Washington
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Joseph Smith
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          27
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          Project Manager
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          Somerville, MA
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Justin Black
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          26
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          Front-End Developer
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          Los Angeles
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Sean Guzman
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          25
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          Web Designer
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          San Francisco
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Keith Carter
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          20
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          Graphic Designer
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          New York, NY
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Austin Medina
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          32
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          Photographer
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          New York
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Vincent Williamson
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          31
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          iOS Developer
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          Washington
-                                      </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                      <div class="cell" data-title="Full Name">
-                                          Joseph Smith
-                                      </div>
-                                      <div class="cell" data-title="Age">
-                                          27
-                                      </div>
-                                      <div class="cell" data-title="Job Title">
-                                          Project Manager
-                                      </div>
-                                      <div class="cell" data-title="Location">
-                                          Somerville, MA
-                                      </div>
-                                  </div>
-          
-                              </div>
+                    <div class="wrap-table100">
+                      <div class="table">
+                        <div class="row1 header">
+                          <div class="cell">No</div>
+                          <div class="cell">Candi-Name</div>
+                          <div class="cell">Party Name</div>
+                          <div class="cell">Posting</div>
+                          <div class="cell">Age</div>
+                          <div class="cell">Qualification</div>
+                          <div class="cell">Nationality</div>
+                        </div>
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">1</div>
+                          <div class="cell" data-title="Candi-Name">
+                            Suganthi
+                          </div>
+                          <div class="cell" data-title="Party Name">SSMK</div>
+                          <div class="cell" data-title="Posting">MB</div>
+                          <div class="cell" data-title="Age">34</div>
+                          <div class="cell" data-title="Qualification">BE</div>
+                          <div class="cell" data-title="Nationality">
+                            Indian
+                          </div>
+                        </div>
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">2</div>
+                          <div class="cell" data-title="Candi-Name">Selva</div>
+                          <div class="cell" data-title="Party Name">JJMK</div>
+                          <div class="cell" data-title="Posting">MB</div>
+                          <div class="cell" data-title="Age">24</div>
+                          <div class="cell" data-title="Qualification">BE</div>
+                          <div class="cell" data-title="Nationality">
+                            Indian
+                          </div>
+                        </div>
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">3</div>
+                          <div class="cell" data-title="Candi-Name">
+                            Satheesh
+                          </div>
+                          <div class="cell" data-title="Party Name">MMK</div>
+                          <div class="cell" data-title="Posting">MB</div>
+                          <div class="cell" data-title="Age">22</div>
+                          <div class="cell" data-title="Qualification">MCA</div>
+                          <div class="cell" data-title="Nationality">
+                            Indian
+                          </div>
+                        </div>
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">4</div>
+                          <div class="cell" data-title="Candi-Name">Sugan</div>
+                          <div class="cell" data-title="Party Name">SSMK</div>
+                          <div class="cell" data-title="Posting">MLA</div>
+                          <div class="cell" data-title="Age">34</div>
+                          <div class="cell" data-title="Qualification">BE</div>
+                          <div class="cell" data-title="Nationality">
+                            Indian
+                          </div>
+                        </div>
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">1</div>
+                          <div class="cell" data-title="Candi-Name">
+                            Jeganthi
+                          </div>
+                          <div class="cell" data-title="Party Name">PPMK</div>
+                          <div class="cell" data-title="Posting">MLA</div>
+                          <div class="cell" data-title="Age">39</div>
+                          <div class="cell" data-title="Qualification">BCA</div>
+                          <div class="cell" data-title="Nationality">
+                            Indian
+                          </div>
+                        </div>
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">1</div>
+                          <div class="cell" data-title="Candi-Name">Raja</div>
+                          <div class="cell" data-title="Party Name">SMK</div>
+                          <div class="cell" data-title="Posting">Member</div>
+                          <div class="cell" data-title="Age">24</div>
+                          <div class="cell" data-title="Qualification">BE</div>
+                          <div class="cell" data-title="Nationality">
+                            Indian
+                          </div>
+                        </div>
                       </div>
+                    </div>
                   </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
-       
       </div>
     </div>
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/chart.js/dist/Chart.js"></script>
-     
   </body>
 </html>
