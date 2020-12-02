@@ -86,7 +86,7 @@ nav {
 .dash-box h1 {
     font-size: 30px;
     color: #0061f2;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .dash-box img {
@@ -318,6 +318,7 @@ h1 {
     font-weight: unset !important;
     padding-top: 19px;
     padding-bottom: 19px;
+<<<<<<< HEAD
 }
 
 .row1 .cell:nth-child(1) {
@@ -351,6 +352,44 @@ h1 {
 
 .table,
 .row1 {
+=======
+  }
+  
+  .row1 .cell:nth-child(1) {
+    width: 190px;
+    padding-left: 40px;
+  }
+  
+  .row1 .cell:nth-child(2) {
+    width: 190px;
+  }
+  
+  .row1 .cell:nth-child(3) {
+    width: 190px;
+  }
+  
+  .row1 .cell:nth-child(4) {
+    width: 190px;
+  }
+  .row1 .cell:nth-child(5) {
+    width: 190px;
+  }
+  .row1 .cell:nth-child(6)
+  {
+    width: 190px;
+   
+  }
+  .row1 .cell:nth-child(7)
+  {
+    width: 190px;
+   
+  }
+  
+
+  
+  
+  .table, .row1 {
+>>>>>>> 08621ec7292042decf3c8cf6b91dc85e3bed4592
     width: 100% !important;
 }
 
