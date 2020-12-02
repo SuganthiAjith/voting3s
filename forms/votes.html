@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>voting system</title>
 
     <link rel="stylesheet" href="../css/styling.css" />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
-    >
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top">
         <img class="img-fluid" src="../images/vilpowerLogo.png" />
-      
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
           Search
         </button>
-      </form>
+        </form>
     </nav>
 
     <div class="d-flex" id="wrapper">
+        <div class="dash" id="sidebar-wrapper">
+            <div class="list-group list-group-flush dashboard">
+                <div class="sidebar-heading">Voting Admin</div>
 
-      <div class="dash" id="sidebar-wrapper">
-
-        <div class="list-group list-group-flush dashboard " >
-          <div class="sidebar-heading">
-             Voting Admin 
-          </div>
-
-          <a href="../app.html" class="list-group-item"
-            ><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
+                <a href="../app.html" class="list-group-item"><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
           >
 
           <a href="../forms/party.html" class="list-group-item"
-            ><i class="fa fa-dashcube" aria-hidden="true"></i
-            >&#9;&#9;Parties</a
+            ><i class="fa fa-dashcube" aria-hidden="true"></i>&#9;&#9;Parties</a
           >
-          <a href="../forms/addprofile.html" class="list-group-item  "
-            ><i class="fa fa-superpowers" aria-hidden="true"></i
-            >&#9;&#9;Add Profile</a
+          <a href="../forms/addprofile.html" class="list-group-item"
+            ><i class="fa fa-superpowers" aria-hidden="true"></i>&#9;&#9;Add
+            Profile</a
           >
           <a href="../forms/candidate.html" class="list-group-item"
             ><i class="fa fa-snowflake-o" aria-hidden="true"></i
@@ -74,7 +55,6 @@
         <div class="row container dash-head">
           <div class="col-xxl-12 col-lg-12">
             <h1 class="text-light">Votes List</h1>
-             
           </div>
         </div>
         <div class="row dash-box ml-1">
@@ -93,176 +73,111 @@
           <div class="col-xxl-12 col-lg-12">
             <div class="card bg-light">
               <div class="card-header">
-                <div class="row justify-content-between">
-                  <div class="col-10">
-                    <h3 class="text-primary">Vote List</h3>
-                  </div>
-                  <div class="col-2">
-                    <a href="./addvote.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create</a>
-                  </div>
+                <div class="d-flex justify-content-between">
+                  <h3 class="text-primary">Vote List</h3>
+
+                  <a
+                    href="./addvote.html"
+                    class="btn btn-primary btn-lg active"
+                    role="button"
+                    aria-pressed="true"
+                    >Create</a
+                  >
                 </div>
               </div>
               <div class="card-body">
                 <div class="limiter">
                   <div class="container-table100">
-                      <div class="wrap-table100">
-                              <div class="table">
-          
-                                  <div class="row1 header">
-                                      <div class="cell">
-                                          No
-                                      </div>
-                                      <div class="cell">
-                                          ID
-                                      </div>
-                                      <div class="cell">
-                                          Candidate Name
-                                      </div>
-                                      <div class="cell">
-                                          Zone Name
-                                      </div>
-                                      <div class="cell">
-                                        Party Name
-                                    </div>
-                                    <div class="cell">
-                                      Vote
-                                  </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                    <div class="cell" data-title="No">
-                                      1
-                                  </div>
-                                      <div class="cell" data-title="ID">
-                                       VT234   
-                                      </div>
-                                      <div class="cell" data-title="Candidate Name">
-                                          Nivatha
-                                      </div>
-                                      <div class="cell" data-title="Zone Name">
-                                          Tenkasi
-                                      </div>
-                                      <div class="cell" data-title="Party Name">
-                                          NJK
-                                      </div>
-                                      <div class="cell" data-title="vote">
-                                        3456
-                                    </div>
-                                  </div>
-                                  <div class="row1">
-                                    <div class="cell" data-title="No">
-                                      2
-                                  </div>
-                                    <div class="cell" data-title="ID">
-                                        VT564
-                                    </div>
-                                    <div class="cell" data-title="Candidate Name">
-                                        Priya
-                                    </div>
-                                    <div class="cell" data-title="Zone Name">
-                                        Tiruneveli
-                                    </div>
-                                    <div class="cell" data-title="Party Name">
-                                        RRK
-                                    </div>
-                                    <div class="cell" data-title="vote">
-                                      4531
-                                  </div>
-                                </div>
-                                <div class="row1">
-                                  <div class="cell" data-title="No">
-                                    3
-                                </div>
-                                  <div class="cell" data-title="ID">
-                                      VT654
-                                  </div>
-                                  <div class="cell" data-title="Candidate Name">
-                                      Raja
-                                  </div>
-                                  <div class="cell" data-title="Zone Name">
-                                      Chennai
-                                  </div>
-                                  <div class="cell" data-title="Party Name">
-                                      SKM
-                                  </div>
-                                  <div class="cell" data-title="vote">
-                                    9626
-                                </div>
-                              </div> <div class="row1">
-                                <div class="cell" data-title="No">
-                                  4
-                              </div>
-                                <div class="cell" data-title="ID">
-                                    VT675
-                                </div>
-                                <div class="cell" data-title="Candidate Name">
-                                    Vel
-                                </div>
-                                <div class="cell" data-title="Zone Name">
-                                  Nagerkovil 
-                                </div>
-                                <div class="cell" data-title="Party Name">
-                                    VSK
-                                </div>
-                                <div class="cell" data-title="vote">
-                                  3456
-                              </div>
-                            </div>
-                            <div class="row1">
-                              <div class="cell" data-title="No">
-                              5
-                          </div>
-                              <div class="cell" data-title="ID">
-                                  VT342
-                              </div>
-                              <div class="cell" data-title="Candidate Name">
-                                  Suba
-                              </div>
-                              <div class="cell" data-title="Zone Name">
-                                Thoothukudi
-                              </div>
-                              <div class="cell" data-title="Party Name">
-                                  KSK
-                              </div>
-                              <div class="cell" data-title="vote">
-                                8765
-                            </div>
-                          </div>
-                          <div class="row1">
-                            <div class="cell" data-title="No">
-                            6
+                    <div class="wrap-table100">
+                      <div class="table">
+                        <div class="row1 header">
+                          <div class="cell">No</div>
+                          <div class="cell">ID</div>
+                          <div class="cell">Candidate Name</div>
+                          <div class="cell">Zone Name</div>
+                          <div class="cell">Party Name</div>
+                          <div class="cell">Vote</div>
                         </div>
-                            <div class="cell" data-title="ID">
-                                VT123
-                            </div>
-                            <div class="cell" data-title="Candidate Name">
-                                Radhika
-                            </div>
-                            <div class="cell" data-title="Zone Name">
-                              Madurai
-                            </div>
-                            <div class="cell" data-title="Party Name">
-                                RMK
-                            </div>
-                            <div class="cell" data-title="vote">
-                              6729
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">1</div>
+                          <div class="cell" data-title="ID">VT234</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Nivatha
                           </div>
+                          <div class="cell" data-title="Zone Name">Tenkasi</div>
+                          <div class="cell" data-title="Party Name">NJK</div>
+                          <div class="cell" data-title="vote">3456</div>
                         </div>
-                              </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">2</div>
+                          <div class="cell" data-title="ID">VT564</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Priya
+                          </div>
+                          <div class="cell" data-title="Zone Name">
+                            Tiruneveli
+                          </div>
+                          <div class="cell" data-title="Party Name">RRK</div>
+                          <div class="cell" data-title="vote">4531</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">3</div>
+                          <div class="cell" data-title="ID">VT654</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Raja
+                          </div>
+                          <div class="cell" data-title="Zone Name">Chennai</div>
+                          <div class="cell" data-title="Party Name">SKM</div>
+                          <div class="cell" data-title="vote">9626</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">4</div>
+                          <div class="cell" data-title="ID">VT675</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Vel
+                          </div>
+                          <div class="cell" data-title="Zone Name">
+                            Nagerkovil
+                          </div>
+                          <div class="cell" data-title="Party Name">VSK</div>
+                          <div class="cell" data-title="vote">3456</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">5</div>
+                          <div class="cell" data-title="ID">VT342</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Suba
+                          </div>
+                          <div class="cell" data-title="Zone Name">
+                            Thoothukudi
+                          </div>
+                          <div class="cell" data-title="Party Name">KSK</div>
+                          <div class="cell" data-title="vote">8765</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">6</div>
+                          <div class="cell" data-title="ID">VT123</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Radhika
+                          </div>
+                          <div class="cell" data-title="Zone Name">Madurai</div>
+                          <div class="cell" data-title="Party Name">RMK</div>
+                          <div class="cell" data-title="vote">6729</div>
+                        </div>
                       </div>
+                    </div>
                   </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
-       
       </div>
     </div>
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/chart.js/dist/Chart.js"></script>
-     
   </body>
 </html>

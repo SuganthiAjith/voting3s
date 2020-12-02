@@ -62,6 +62,7 @@ nav {
 .cards-bgap {
     margin-top: 80px;
     background: linear-gradient(0deg, lightgray 65%, #0061f2 35%);
+    width: 100%;
 }
 
 .dash-head {
@@ -162,8 +163,8 @@ nav {
 
 .login-form-1 h3,
 h1 {
-    text-align: center;
     color: #333;
+    margin-left: 20px;
 }
 
 .login-form-2 {
@@ -237,7 +238,7 @@ h1 {
 }
 
 .wrap-table100 {
-    width: 960px;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -248,7 +249,7 @@ h1 {
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .table {
         display: block;
     }
@@ -264,7 +265,7 @@ h1 {
     background: #0061f2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .row1 {
         display: block;
     }
@@ -350,6 +351,38 @@ h1 {
 }
 
 .table,
+.row1 {}
+
+.row1 .cell:nth-child(1) {
+    width: 190px;
+    padding-left: 40px;
+}
+
+.row1 .cell:nth-child(2) {
+    width: 190px;
+}
+
+.row1 .cell:nth-child(3) {
+    width: 190px;
+}
+
+.row1 .cell:nth-child(4) {
+    width: 190px;
+}
+
+.row1 .cell:nth-child(5) {
+    width: 190px;
+}
+
+.row1 .cell:nth-child(6) {
+    width: 190px;
+}
+
+.row1 .cell:nth-child(7) {
+    width: 190px;
+}
+
+.table,
 .row1 {
     width: 100% !important;
 }
@@ -388,53 +421,4 @@ h1 {
     .cell {
         width: 100% !important;
     }
-}
-
-
-
-.timeline.timeline-xs .timeline-item .timeline-item-marker .timeline-item-marker-indicator {
-    height: 0.875rem;
-    width: 0.875rem;
-    font-size: 0.875rem;
-    border: 0.125rem solid #fff;
-    margin-top: -0.125rem;
-}
-.timeline .timeline-item .timeline-item-marker .timeline-item-marker-indicator {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    width: 3rem;
-    background-color: #f2f6fc;
-    border-radius: 100%;
-}
-.bg-green {
-    background-color: #00ac69 !important;
-}
-.timeline.timeline-xs .timeline-item .timeline-item-marker {
-    transform: translateX(0.5625rem);
-}
-
-.timeline .timeline-item .timeline-item-marker {
-    flex-direction: row;
-    transform: translateX(1.625rem);
-    margin-bottom: 0;
-}
-
-.timeline .timeline-item .timeline-item-marker {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.bg-yellow {
-    background-color: #f4a100 !important;
-}
-.bg-purple {
-    background-color: #6900c7 !important;
-}
-.bg-blue {
-    background-color: #0061f2 !important;
 }
