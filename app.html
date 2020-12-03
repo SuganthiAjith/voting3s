@@ -24,47 +24,56 @@
       <!-- <img class="img-fluid" src="./images/vilpowerLogo.png" /> -->
       <div class="sidebar-heading">Voting Admin</div>
         
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+        <i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i>
+        </nav>
 
-      <form class="form-inline">
+      <!-- <form class="form-inline">
         <input
           class="form-control mr-sm-2"
           type="search"
-          placeholder="Search"
+          placeholder="Search" 
           aria-label="Search"
         />
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
           Search
         </button>
-      </form>
+      </form> -->
     </nav>
 
     <div class="d-flex" id="wrapper">
-      <div class="dash" id="sidebar-wrapper">
-        <div class="list-group list-group-flush dashboard">
+    
 
-          <a href="app.html" class="list-group-item"
-            ><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
+
+       <!-- Sidebar -->
+   <div class="bg-light border-right" id="sidebar-wrapper">
+    <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
+    <div class="list-group list-group-flush" style="margin-top: 90px;">
+      <a href="app.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-xing mr-3" aria-hidden="true"></i>&#9;&#9;Dashboard</a
           >
 
-          <a href="./forms/party.html" class="list-group-item"
-            ><i class="fa fa-dashcube" aria-hidden="true"></i>&#9;&#9;Parties</a
+          <a href="./forms/party.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-dashcube mr-3" aria-hidden="true"></i>Parties</a
           >
-          <!-- <a href="./forms/addprofile.html" class="list-group-item  "
+          <!-- <a href="./forms/addprofile.html" class="list-group-item list-group-item-action  "
             ><i class="fa fa-superpowers" aria-hidden="true"></i
             >&#9;&#9;Add Profile</a
           > -->
-          <a href="./forms/candidate.html" class="list-group-item"
-            ><i class="fa fa-snowflake-o" aria-hidden="true"></i
+          <a href="./forms/candidate.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-snowflake-o mr-3" aria-hidden="true"></i
             >&#9;&#9;Candidates</a
           >
-          <a href="./forms/zones.html" class="list-group-item"
-            ><i class="fa fa-user" aria-hidden="true"></i>&#9;&#9;Zones</a
+          <a href="./forms/zones.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
           >
-          <a href="./forms/votes.html" class="list-group-item"
-            ><i class="fa fa-compass" aria-hidden="true"></i>&#9;&#9;Votes</a
+          <a href="./forms/votes.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-compass mr-3" aria-hidden="true"></i>&#9;&#9;Votes</a
           >
-        </div>
-      </div>
+  </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
 
       <div class="container cards cards-bg">
         <div class="row container dash-head">
@@ -566,6 +575,12 @@
         ],
       };
       myChart.setOption(option);
+    </script>
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
     </script>
   </body>
 </html>
