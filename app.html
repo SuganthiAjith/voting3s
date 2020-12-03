@@ -21,8 +21,10 @@
     <nav
       class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
     >
-        <img class="img-fluid" src="./images/vilpowerLogo.png" />
-      
+      <!-- <img class="img-fluid" src="./images/vilpowerLogo.png" /> -->
+      <div class="sidebar-heading">Voting Admin</div>
+        
+
       <form class="form-inline">
         <input
           class="form-control mr-sm-2"
@@ -37,21 +39,15 @@
     </nav>
 
     <div class="d-flex" id="wrapper">
-
       <div class="dash" id="sidebar-wrapper">
-
-        <div class="list-group list-group-flush dashboard" >
-          <div class="sidebar-heading">
-             Voting Admin 
-          </div>
+        <div class="list-group list-group-flush dashboard">
 
           <a href="app.html" class="list-group-item"
             ><i class="fa fa-xing" aria-hidden="true"></i>&#9;&#9;Dashboard</a
           >
 
           <a href="./forms/party.html" class="list-group-item"
-            ><i class="fa fa-dashcube" aria-hidden="true"></i
-            >&#9;&#9;Parties</a
+            ><i class="fa fa-dashcube" aria-hidden="true"></i>&#9;&#9;Parties</a
           >
           <!-- <a href="./forms/addprofile.html" class="list-group-item  "
             ><i class="fa fa-superpowers" aria-hidden="true"></i
@@ -73,14 +69,15 @@
       <div class="container cards cards-bg">
         <div class="row container dash-head">
           <div class="col-xxl-12 col-lg-12 top">
-            <h1 class="text-light"><i class="fa fa-xing pr-3" aria-hidden="true"></i>Dashboard</h1>
-            
+            <h1 class="text-light">
+              <i class="fa fa-xing pr-3" aria-hidden="true"></i>Dashboard
+            </h1>
           </div>
         </div>
         <div class="row dash-box ml-1">
           <div class="col-xxl-4 col-lg-8 dashbox-col">
             <h1 class="text-align-left">Welcome to Voting Admin Pro!</h1>
-            <p class="lead ">
+            <p class="lead">
               When people cast their vote, they are actually voting for a group
               of people called electors.
             </p>
@@ -92,137 +89,216 @@
         <div class="row">
           <div class="col-xxl-4 col-xl-6 mb-4">
             <div class="card card-header-actions h-100">
-                <div class="card-header" style="color:  #0062cc;">
-                    Recent Activity
-                    
-                </div>
-                <div class="card-body">
-                    <div class="timeline timeline-xs">
-                        <!-- Timeline Item 1-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">27 min</div>
-                                <div class="timeline-item-marker-indicator bg-green"></div>
-                            </div>
-                            <div class="timeline-item-content">
-                                New commity started!
-                                <a class="font-weight-bold text-dark" href="#!">EL2020</a>
-                                has been successfully started.
-                            </div>
-                        </div>
-                        <!-- Timeline Item 2-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">58 min</div>
-                                <div class="timeline-item-marker-indicator bg-blue"></div>
-                            </div>
-                            <div class="timeline-item-content">
-                                Our
-                                <a class="font-weight-bold text-dark" href="#!">Yearly report</a>
-                                has been generated and is ready to view.
-                            </div>
-                        </div>
-                        <!-- Timeline Item 3-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">2 hrs</div>
-                                <div class="timeline-item-marker-indicator bg-purple"></div>
-                            </div>
-                            <div class="timeline-item-content">
-                                New candidate
-                                <a class="font-weight-bold text-dark" href="#!">Maran</a>
-                                has registered
-                            </div>
-                        </div>
-                        <!-- Timeline Item 4-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">1 day</div>
-                                <div class="timeline-item-marker-indicator bg-yellow"></div>
-                            </div>
-                            <div class="timeline-item-content">Server activity monitor alert</div>
-                        </div>
-                        <!-- Timeline Item 5-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">1 day</div>
-                                <div class="timeline-item-marker-indicator bg-green"></div>
-                            </div>
-                            <div class="timeline-item-content">
-                                New list generated!
-                                <a class="font-weight-bold text-dark" href="#!">NL2020</a>
-                                has been successfully generated.
-                            </div>
-                        </div>
-                        <!-- Timeline Item 6-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">1 day</div>
-                                <div class="timeline-item-marker-indicator bg-purple"></div>
-                            </div>
-                            <div class="timeline-item-content">
-                                Details for
-                                <a class="font-weight-bold text-dark" href="#!">Votes and Results</a>
-                                have been updated.
-                            </div>
-                        </div>
-                        <!-- Timeline Item 7-->
-                        <div class="timeline-item">
-                            <div class="timeline-item-marker">
-                                <div class="timeline-item-marker-text">2 days</div>
-                                <div class="timeline-item-marker-indicator bg-green"></div>
-                            </div>
-                            <div class="timeline-item-content">
-                                New  govt. order placed!
-                                <a class="font-weight-bold text-dark" href="#!">Order #2910</a>
-                                has been successfully placed.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xxl-4 col-xl-6 mb-4">
-          <div class="card card-header-actions h-100">
-              <div class="card-header" style="color:  #0062cc;">
-                  Progress Tracker
-                  
+              <div class="card-header" style="color: #0062cc">
+                Recent Activity
               </div>
               <div class="card-body">
-                  <h4 class="small">
-                    SSMK
-                      <span class="float-right font-weight-bold">20%</span>
-                  </h4>
-                  <div class="progress mb-4"><div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div></div>
-                  <h4 class="small">
-                    JJMK
-                      <span class="float-right font-weight-bold">40%</span>
-                  </h4>
-                  <div class="progress mb-4"><div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div></div>
-                  <h4 class="small">
-                    MMK
-                      <span class="float-right font-weight-bold">60%</span>
-                  </h4>
-                  <div class="progress mb-4"><div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div></div>
-                  <h4 class="small">
-                    TTMK
-                      <span class="float-right font-weight-bold">80%</span>
-                  </h4>
-                  <div class="progress mb-4"><div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-                  <h4 class="small">
-                    CCMK
-                      <span class="float-right font-weight-bold">Win!</span>
-                  </h4>
-                  <div class="progress"><div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
+                <div class="timeline timeline-xs">
+                  <!-- Timeline Item 1-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">27 min</div>
+                      <div
+                        class="timeline-item-marker-indicator bg-green"
+                      ></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      New commity started!
+                      <a class="font-weight-bold text-dark" href="#!">EL2020</a>
+                      has been successfully started.
+                    </div>
+                  </div>
+                  <!-- Timeline Item 2-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">58 min</div>
+                      <div class="timeline-item-marker-indicator bg-blue"></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      Our
+                      <a class="font-weight-bold text-dark" href="#!"
+                        >Yearly report</a
+                      >
+                      has been generated and is ready to view.
+                    </div>
+                  </div>
+                  <!-- Timeline Item 3-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">2 hrs</div>
+                      <div
+                        class="timeline-item-marker-indicator bg-purple"
+                      ></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      New candidate
+                      <a class="font-weight-bold text-dark" href="#!">Maran</a>
+                      has registered
+                    </div>
+                  </div>
+                  <!-- Timeline Item 4-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">1 day</div>
+                      <div
+                        class="timeline-item-marker-indicator bg-yellow"
+                      ></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      Server activity monitor alert
+                    </div>
+                  </div>
+                  <!-- Timeline Item 5-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">1 day</div>
+                      <div
+                        class="timeline-item-marker-indicator bg-green"
+                      ></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      New list generated!
+                      <a class="font-weight-bold text-dark" href="#!">NL2020</a>
+                      has been successfully generated.
+                    </div>
+                  </div>
+                  <!-- Timeline Item 6-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">1 day</div>
+                      <div
+                        class="timeline-item-marker-indicator bg-purple"
+                      ></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      Details for
+                      <a class="font-weight-bold text-dark" href="#!"
+                        >Votes and Results</a
+                      >
+                      have been updated.
+                    </div>
+                  </div>
+                  <!-- Timeline Item 7-->
+                  <div class="timeline-item">
+                    <div class="timeline-item-marker">
+                      <div class="timeline-item-marker-text">2 days</div>
+                      <div
+                        class="timeline-item-marker-indicator bg-green"
+                      ></div>
+                    </div>
+                    <div class="timeline-item-content">
+                      New govt. order placed!
+                      <a class="font-weight-bold text-dark" href="#!"
+                        >Order #2910</a
+                      >
+                      has been successfully placed.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-6 mb-4">
+            <div class="card card-header-actions h-100">
+              <div class="card-header" style="color: #0062cc">
+                Progress Tracker
+              </div>
+              <div class="card-body">
+                <h4 class="small">
+                  SSMK
+                  <span class="float-right font-weight-bold">20%</span>
+                </h4>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h4 class="small">
+                  JJMK
+                  <span class="float-right font-weight-bold">40%</span>
+                </h4>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar bg-warning"
+                    role="progressbar"
+                    style="width: 40%"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h4 class="small">
+                  MMK
+                  <span class="float-right font-weight-bold">60%</span>
+                </h4>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h4 class="small">
+                  TTMK
+                  <span class="float-right font-weight-bold">80%</span>
+                </h4>
+                <div class="progress mb-4">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <h4 class="small">
+                  CCMK
+                  <span class="float-right font-weight-bold">Win!</span>
+                </h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 100%"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
               <a class="card-footer" href="#!">
-                  <div class="d-flex align-items-center justify-content-between small text-body">
-                      Visit Task Center
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
+                <div
+                  class="d-flex align-items-center justify-content-between small text-body"
+                >
+                  Visit Task Center
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-arrow-right"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
               </a>
+            </div>
           </div>
-      </div>
         </div>
 
         <div class="row cards-row">
@@ -312,182 +388,114 @@
             <div class="card bg-light mb-3">
               <div class="card-header">Vote chart</div>
               <div class="card-body">
-              <div id="charts" style="width: 500px; height: 300px;"></div>
-            </div>
+                <div id="charts" style="width: 500px; height: 300px"></div>
+              </div>
             </div>
           </div>
           <div class="col-xxl-3 col-lg-6">
             <div class="card bg-light mb-3">
               <div class="card-header">Vote chart</div>
               <div class="card-body">
-                <div id="main" style="width: 500px; height: 300px;"></div>
+                <div id="main" style="width: 500px; height: 300px"></div>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-xxl-12 col-lg-12">
             <div class="card bg-light mb-3">
-              <div class="card-header"><h3 class="text-primary">Votes List</h3></div>
+              <div class="card-header">
+                <h3 class="text-primary">Votes List</h3>
+              </div>
               <div class="card-body">
                 <div class="limiter">
                   <div class="container-table100">
-                      <div class="wrap-table100">
-                              <div class="table">
-          
-                                  <div class="row1 header">
-                                      <div class="cell">
-                                          No
-                                      </div>
-                                      <div class="cell">
-                                          ID
-                                      </div>
-                                      <div class="cell">
-                                          Candidate Name
-                                      </div>
-                                      <div class="cell">
-                                          Zone Name
-                                      </div>
-                                      <div class="cell">
-                                        Party Name
-                                    </div>
-                                    <div class="cell">
-                                      Vote
-                                  </div>
-                                  </div>
-          
-                                  <div class="row1">
-                                    <div class="cell" data-title="No">
-                                      1
-                                  </div>
-                                      <div class="cell" data-title="ID">
-                                       VT234   
-                                      </div>
-                                      <div class="cell" data-title="Candidate Name">
-                                          Nivatha
-                                      </div>
-                                      <div class="cell" data-title="Zone Name">
-                                          Tenkasi
-                                      </div>
-                                      <div class="cell" data-title="Party Name">
-                                          NJK
-                                      </div>
-                                      <div class="cell" data-title="vote">
-                                        3456
-                                    </div>
-                                  </div>
-                                  <div class="row1">
-                                    <div class="cell" data-title="No">
-                                      2
-                                  </div>
-                                    <div class="cell" data-title="ID">
-                                        VT564
-                                    </div>
-                                    <div class="cell" data-title="Candidate Name">
-                                        Priya
-                                    </div>
-                                    <div class="cell" data-title="Zone Name">
-                                        Tiruneveli
-                                    </div>
-                                    <div class="cell" data-title="Party Name">
-                                        RRK
-                                    </div>
-                                    <div class="cell" data-title="vote">
-                                      4531
-                                  </div>
-                                </div>
-                                <div class="row1">
-                                  <div class="cell" data-title="No">
-                                    3
-                                </div>
-                                  <div class="cell" data-title="ID">
-                                      VT654
-                                  </div>
-                                  <div class="cell" data-title="Candidate Name">
-                                      Raja
-                                  </div>
-                                  <div class="cell" data-title="Zone Name">
-                                      Chennai
-                                  </div>
-                                  <div class="cell" data-title="Party Name">
-                                      SKM
-                                  </div>
-                                  <div class="cell" data-title="vote">
-                                    9626
-                                </div>
-                              </div> <div class="row1">
-                                <div class="cell" data-title="No">
-                                  4
-                              </div>
-                                <div class="cell" data-title="ID">
-                                    VT675
-                                </div>
-                                <div class="cell" data-title="Candidate Name">
-                                    Vel
-                                </div>
-                                <div class="cell" data-title="Zone Name">
-                                  Nagerkovil 
-                                </div>
-                                <div class="cell" data-title="Party Name">
-                                    VSK
-                                </div>
-                                <div class="cell" data-title="vote">
-                                  3456
-                              </div>
-                            </div>
-                            <div class="row1">
-                              <div class="cell" data-title="No">
-                              5
-                          </div>
-                              <div class="cell" data-title="ID">
-                                  VT342
-                              </div>
-                              <div class="cell" data-title="Candidate Name">
-                                  Suba
-                              </div>
-                              <div class="cell" data-title="Zone Name">
-                                Thoothukudi
-                              </div>
-                              <div class="cell" data-title="Party Name">
-                                  KSK
-                              </div>
-                              <div class="cell" data-title="vote">
-                                8765
-                            </div>
-                          </div>
-                          <div class="row1">
-                            <div class="cell" data-title="No">
-                            6
+                    <div class="wrap-table100">
+                      <div class="table">
+                        <div class="row1 header">
+                          <div class="cell">No</div>
+                          <div class="cell">ID</div>
+                          <div class="cell">Candidate Name</div>
+                          <div class="cell">Zone Name</div>
+                          <div class="cell">Party Name</div>
+                          <div class="cell">Vote</div>
                         </div>
-                            <div class="cell" data-title="ID">
-                                VT123
-                            </div>
-                            <div class="cell" data-title="Candidate Name">
-                                Radhika
-                            </div>
-                            <div class="cell" data-title="Zone Name">
-                              Madurai
-                            </div>
-                            <div class="cell" data-title="Party Name">
-                                RMK
-                            </div>
-                            <div class="cell" data-title="vote">
-                              6729
+
+                        <div class="row1">
+                          <div class="cell" data-title="No">1</div>
+                          <div class="cell" data-title="ID">VT234</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Nivatha
                           </div>
+                          <div class="cell" data-title="Zone Name">Tenkasi</div>
+                          <div class="cell" data-title="Party Name">NJK</div>
+                          <div class="cell" data-title="vote">3456</div>
                         </div>
-                              </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">2</div>
+                          <div class="cell" data-title="ID">VT564</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Priya
+                          </div>
+                          <div class="cell" data-title="Zone Name">
+                            Tiruneveli
+                          </div>
+                          <div class="cell" data-title="Party Name">RRK</div>
+                          <div class="cell" data-title="vote">4531</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">3</div>
+                          <div class="cell" data-title="ID">VT654</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Raja
+                          </div>
+                          <div class="cell" data-title="Zone Name">Chennai</div>
+                          <div class="cell" data-title="Party Name">SKM</div>
+                          <div class="cell" data-title="vote">9626</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">4</div>
+                          <div class="cell" data-title="ID">VT675</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Vel
+                          </div>
+                          <div class="cell" data-title="Zone Name">
+                            Nagerkovil
+                          </div>
+                          <div class="cell" data-title="Party Name">VSK</div>
+                          <div class="cell" data-title="vote">3456</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">5</div>
+                          <div class="cell" data-title="ID">VT342</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Suba
+                          </div>
+                          <div class="cell" data-title="Zone Name">
+                            Thoothukudi
+                          </div>
+                          <div class="cell" data-title="Party Name">KSK</div>
+                          <div class="cell" data-title="vote">8765</div>
+                        </div>
+                        <div class="row1">
+                          <div class="cell" data-title="No">6</div>
+                          <div class="cell" data-title="ID">VT123</div>
+                          <div class="cell" data-title="Candidate Name">
+                            Radhika
+                          </div>
+                          <div class="cell" data-title="Zone Name">Madurai</div>
+                          <div class="cell" data-title="Party Name">RMK</div>
+                          <div class="cell" data-title="vote">6729</div>
+                        </div>
                       </div>
+                    </div>
                   </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
-        
-
-
-
       </div>
     </div>
 
@@ -497,67 +505,67 @@
     <script src="node_modules/chart.js/dist/Chart.js"></script>
 
     <script>
-      var myChart= echarts.init(document.getElementById('main'));
+      var myChart = echarts.init(document.getElementById("main"));
       option = {
-    color: ['#4f72e3'],
-    tooltip: {
-        trigger: 'axis',
-        axisPointer: {            
-            type: 'shadow'        
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis: [
-        {
-            type: 'category',
-            data: ['TVL', 'Thk', 'Tk', 'Nk', 'Chennai', 'Kovai', 'Theni'],
+        color: ["#4f72e3"],
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "shadow",
+          },
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
+        },
+        xAxis: [
+          {
+            type: "category",
+            data: ["TVL", "Thk", "Tk", "Nk", "Chennai", "Kovai", "Theni"],
             axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis: [
-        {
-            type: 'value'
-        }
-    ],
-    series: [
-        {
-            name: 'result',
-            type: 'bar',
-            barWidth: '40%',
-            data: [10000, 5200, 20000, 33400, 39000, 33000, 22000]
-        }
-    ]
-};
-myChart.setOption(option);
+              alignWithLabel: true,
+            },
+          },
+        ],
+        yAxis: [
+          {
+            type: "value",
+          },
+        ],
+        series: [
+          {
+            name: "result",
+            type: "bar",
+            barWidth: "40%",
+            data: [10000, 5200, 20000, 33400, 39000, 33000, 22000],
+          },
+        ],
+      };
+      myChart.setOption(option);
+    </script>
 
-</script>
-
-<script>
-  var myChart= echarts.init(document.getElementById('charts'));
-  option = {
-color: ['#4f72e3'],
-xAxis: {
-        type: 'category',
-        data: ['2000', '2004', '2008', '2012', '2016', '2020']
-    },
-    yAxis: {
-        type: 'value'
-    },
-    series: [{
-        data: [100, 50, 200, 150, 300, 250,],
-        type: 'line',
-        smooth: true
-    }]
-};
-myChart.setOption(option);
-</script>
-
+    <script>
+      var myChart = echarts.init(document.getElementById("charts"));
+      option = {
+        color: ["#4f72e3"],
+        xAxis: {
+          type: "category",
+          data: ["2000", "2004", "2008", "2012", "2016", "2020"],
+        },
+        yAxis: {
+          type: "value",
+        },
+        series: [
+          {
+            data: [100, 50, 200, 150, 300, 250],
+            type: "line",
+            smooth: true,
+          },
+        ],
+      };
+      myChart.setOption(option);
+    </script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -18,7 +19,7 @@ nav {
 
 .dashboard a {
     font-size: 20px;
-    color: black;
+    color:#212832;
 }
 
 .dashboard a:hover {
@@ -28,8 +29,8 @@ nav {
 
 .sidebar-heading {
     text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
+     
+    font-size: 25px;
     margin-left: 20px;
     color: #0061f2;
     font-weight: bolder;
@@ -117,8 +118,8 @@ nav {
 }
 
 .list-group a {
-    border: none;
-    font-size: 15px;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -262,7 +263,7 @@ h1 {
 
 .row1.header {
     color: #ffffff;
-    background: #0061f2;
+    background:grey;
 }
 
 @media screen and (max-width: 900px) {
@@ -277,7 +278,7 @@ h1 {
         display: none;
     }
     .row1 .cell:before {
-        font-family: Poppins-Bold;
+        /* font-family: Poppins-Bold; */
         font-size: 12px;
         color: #808080;
         line-height: 1.2;
@@ -301,7 +302,7 @@ h1 {
 }
 
 .row1 .cell {
-    font-family: Poppins-Regular;
+    /* font-family: Poppins-Regular; */
     font-size: 15px;
     color: #666666;
     line-height: 1.2;
@@ -312,7 +313,7 @@ h1 {
 }
 
 .row1.header .cell {
-    font-family: Poppins-Regular;
+    /* font-family: Poppins-Regular; */
     font-size: 18px;
     color: #fff;
     line-height: 1.2;
@@ -410,7 +411,7 @@ h1 {
         padding-left: 30px;
     }
     .row1 .cell {
-        font-family: Poppins-Regular;
+        /* font-family: Poppins-Regular; */
         font-size: 18px;
         color: #555555;
         line-height: 1.2;
