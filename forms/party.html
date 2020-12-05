@@ -102,18 +102,21 @@
                 <div class="limiter">
                   <div class="container-table100">
                     <div class="wrap-table100">
-                      <div class="table">
-                        <div class="row1 header">
-                          <div class="cell">No</div>
-                          <div class="cell">Party Name</div>
-                          <div class="cell">Logo</div>
-                          <div class="cell">Head</div>
-                          <div class="cell">MLA</div>
-                          <div class="cell">MB</div>
-                        </div>
+                      <table class="table" >
+                        <thead>
+                          <tr class="row1 header">
+                            <th class="cell">No</th>
+                            <th class="cell">Party Name</th>
+                            <th class="cell">Logo</th>
+                            <th class="cell">Head</th>
+                            <th class="cell">MLA</th>
+                            <th class="cell">MB</th></tr>
+                          
+                        </thead>
 
-                        <div class="row1">
-                          <div class="cell" data-title="No">1</div>
+                        <tbody id="party"></tbody>
+                        <!-- <div class="row1" > -->
+                          <!-- <div class="cell" data-title="No">1</div>
                           <div class="cell" data-title="Party Name">SSMK</div>
                           <div class="cell" data-title="Logo">
                             <img
@@ -182,8 +185,9 @@
                           <div class="cell" data-title="Head">Samy</div>
                           <div class="cell" data-title="MLA">32</div>
                           <div class="cell" data-title="MB">10</div>
-                        </div>
-                      </div>
+                        </div> -->
+                      </table>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -204,4 +208,6 @@
       });
     </script>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../controller/common.js"></script>
 </html>

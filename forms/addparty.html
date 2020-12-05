@@ -20,45 +20,45 @@
 
   <body>
     <nav
-    class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
-  >
-   
-    <div class="sidebar-heading">Voting Admin</div>
-      
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-     
-      <i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i>
-      </nav>
+      class="navbar navbar-light bg-light shadow p-3 mb-5 bg-white rounded fixed-top"
+    >
+      <div class="sidebar-heading">Voting Admin</div>
 
-    
-  </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i>
+      </nav>
+    </nav>
 
     <div class="d-flex" id="wrapper">
       <div class="bg-light border-right" id="sidebar-wrapper">
         <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
-        <div class="list-group list-group-flush" style="margin-top: 90px;">
+        <div class="list-group list-group-flush" style="margin-top: 90px">
           <a href="../app.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-xing mr-3" aria-hidden="true"></i>&#9;&#9;Dashboard</a
-              >
-    
-              <a href="./party.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-dashcube mr-3" aria-hidden="true"></i>Parties</a
-              >
-              <!-- <a href="./forms/addprofile.html" class="list-group-item list-group-item-action  "
+            ><i class="fa fa-xing mr-3" aria-hidden="true"></i
+            >&#9;&#9;Dashboard</a
+          >
+
+          <a href="./party.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-dashcube mr-3" aria-hidden="true"></i>Parties</a
+          >
+          <!-- <a href="./forms/addprofile.html" class="list-group-item list-group-item-action  "
                 ><i class="fa fa-superpowers" aria-hidden="true"></i
                 >&#9;&#9;Add Profile</a
               > -->
-              <a href="./candidate.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-snowflake-o mr-3" aria-hidden="true"></i
-                >&#9;&#9;Candidates</a
-              >
-              <a href="./zones.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
-              >
-              <a href="./votes.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-compass mr-3" aria-hidden="true"></i>&#9;&#9;Votes</a
-              >
-      </div>
+          <a
+            href="./candidate.html"
+            class="list-group-item list-group-item-action"
+            ><i class="fa fa-snowflake-o mr-3" aria-hidden="true"></i
+            >&#9;&#9;Candidates</a
+          >
+          <a href="./zones.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
+          >
+          <a href="./votes.html" class="list-group-item list-group-item-action"
+            ><i class="fa fa-compass mr-3" aria-hidden="true"></i
+            >&#9;&#9;Votes</a
+          >
+        </div>
       </div>
 
       <div class="container-fluid cards-bgap">
@@ -95,7 +95,7 @@
             <div class="card mb-4">
               <div class="card-header">Add Party Details</div>
               <div class="card-body">
-                <form>
+                <form id="pform">
                   <!-- Form Group (username)-->
 
                   <!-- Form Row-->
@@ -107,7 +107,7 @@
                       >
                       <input
                         class="form-control"
-                        id="inputFirstName"
+                        id="partyname"
                         type="text"
                         placeholder="Enter your Party name"
                       />
@@ -119,7 +119,7 @@
                       >
                       <input
                         class="form-control"
-                        id="inputLastName"
+                        id="headname"
                         type="text"
                         placeholder="Enter your head name"
                       />
@@ -134,7 +134,7 @@
                       >
                       <input
                         class="form-control"
-                        id="inputOrgName"
+                        id="mla"
                         type="number"
                         placeholder="Enter MLA count"
                       />
@@ -146,7 +146,7 @@
                       >
                       <input
                         class="form-control"
-                        id="inputLocation"
+                        id="mp"
                         type="number"
                         placeholder="Enter MP count"
                       />
@@ -159,6 +159,8 @@
                     <a
                       href="./party.html"
                       class="btn btn-primary active"
+                      type="submit"
+                      id="submit"
                       role="button"
                       aria-pressed="true"
                       >Save Changes</a
@@ -178,18 +180,19 @@
         </div>
       </div>
     </div>
-   
+
     <!-- <script src="../fun.js"></script> -->
-   
+
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/chart.js/dist/Chart.js"></script>
-    
+
     <script>
-      $("#menu-toggle").click(function(e) {
+      $("#menu-toggle").click(function (e) {
         $("#wrapper").toggleClass("toggled");
       });
     </script>
-    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="../controller/common.js"></script>
   </body>
 </html>

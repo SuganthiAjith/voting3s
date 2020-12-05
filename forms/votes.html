@@ -102,18 +102,22 @@
                 <div class="limiter">
                   <div class="container-table100">
                     <div class="wrap-table100">
-                      <div class="table">
-                        <div class="row1 header">
-                          <div class="cell">No</div>
-                          <div class="cell">ID</div>
-                          <div class="cell">Candidate Name</div>
-                          <div class="cell">Zone Name</div>
-                          <div class="cell">Party Name</div>
-                          <div class="cell">Vote</div>
-                        </div>
+                      <table class="table">
+                        <thead>
 
-                        <div class="row1">
-                          <div class="cell" data-title="No">1</div>
+                        <tr class="row1 header">
+                          <td class="cell">No</td>
+                          <td class="cell">ID</td>
+                          <td class="cell">Candidate Name</td>
+                          <td class="cell">Zone Name</td>
+                          <td class="cell">Party Name</td>
+                          <td class="cell">Vote</td>
+                          </tr>
+                        </thead>
+
+                        <tbody id="vote"></tbody>
+                          </table>
+                          <!-- <div class="cell" data-title="No">1</div>
                           <div class="cell" data-title="ID">VT234</div>
                           <div class="cell" data-title="Candidate Name">
                             Nivatha
@@ -177,7 +181,7 @@
                           <div class="cell" data-title="Zone Name">Madurai</div>
                           <div class="cell" data-title="Party Name">RMK</div>
                           <div class="cell" data-title="vote">6729</div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -198,5 +202,7 @@
         $("#wrapper").toggleClass("toggled");
       });
     </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="../controller/common.js"></script>
   </body>
 </html>
