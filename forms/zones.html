@@ -42,6 +42,10 @@
           <a href="../app.html" class="list-group-item list-group-item-action"
                 ><i class="fa fa-xing mr-3" aria-hidden="true"></i>&#9;&#9;Dashboard</a
               >
+
+               <a href="./zones.html" class="list-group-item list-group-item-action"
+                ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
+              >
     
               <a href="./party.html" class="list-group-item list-group-item-action"
                 ><i class="fa fa-dashcube mr-3" aria-hidden="true"></i>Parties</a
@@ -54,9 +58,7 @@
                 ><i class="fa fa-snowflake-o mr-3" aria-hidden="true"></i
                 >&#9;&#9;Candidates</a
               >
-              <a href="./zones.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
-              >
+             
               <a href="./votes.html" class="list-group-item list-group-item-action"
                 ><i class="fa fa-compass mr-3" aria-hidden="true"></i>&#9;&#9;Votes</a
               >
@@ -101,16 +103,21 @@
                 <div class="limiter">
                   <div class="container-table100">
                     <div class="wrap-table100">
-                      <div class="table">
-                        <div class="row1 header">
-                          <div class="cell">No</div>
-                          <div class="cell">Zoneid</div>
-                          <div class="cell">Zone Name</div>
-                          <div class="cell">Candidates Names</div>
-                          <div class="cell">Party Names</div>
-                        </div>
+                      <table class="table">
+                        <thead>
+                          <tr class="row1 header">
+                            <th class="cell">No</th>
+                            <!-- <th class="cell">Zoneid</th> -->
+                            <th class="cell">Zone Name</th>
+                            <th class="cell">Candidates Names</th>
+                            <th class="cell">Party Names</th>
+                            <th class="cell">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="zone"></tbody>
+                        </table>
 
-                        <div class="row1">
+                        <!-- <div class="row1">
                           <div class="cell" data-title="No">1</div>
                           <div class="cell" data-title="Zoneid">ZI5364</div>
                           <div class="cell" data-title="Zone Name">Tenkasi</div>
@@ -118,9 +125,9 @@
                             Satheesh
                           </div>
                           <div class="cell" data-title="Party Name">SSK</div>
-                        </div>
+                        </div> -->
 
-                        <div class="row1">
+                        <!-- <div class="row1">
                           <div class="cell" data-title="No">2</div>
                           <div class="cell" data-title="Zone Id">ZI5367</div>
                           <div class="cell" data-title="Zone Name">
@@ -174,8 +181,8 @@
                             Nive
                           </div>
                           <div class="cell" data-title="Party Names">NVK</div>
-                        </div>
-                      </div>
+                        </div> -->
+                      
                     </div>
                   </div>
                 </div>
@@ -195,5 +202,7 @@
         $("#wrapper").toggleClass("toggled");
       });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../controller/common.js"></script>
   </body>
 </html>

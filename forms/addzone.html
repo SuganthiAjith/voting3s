@@ -43,6 +43,10 @@
           <a href="../app.html" class="list-group-item list-group-item-action"
                 ><i class="fa fa-xing mr-3" aria-hidden="true"></i>&#9;&#9;Dashboard</a
               >
+
+              <a href="./zones.html" class="list-group-item list-group-item-action"
+                ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
+              >
     
               <a href="./party.html" class="list-group-item list-group-item-action"
                 ><i class="fa fa-dashcube mr-3" aria-hidden="true"></i>Parties</a
@@ -55,9 +59,7 @@
                 ><i class="fa fa-snowflake-o mr-3" aria-hidden="true"></i
                 >&#9;&#9;Candidates</a
               >
-              <a href="./zones.html" class="list-group-item list-group-item-action"
-                ><i class="fa fa-user mr-3" aria-hidden="true"></i>&#9;&#9;Zones</a
-              >
+              
               <a href="./votes.html" class="list-group-item list-group-item-action"
                 ><i class="fa fa-compass mr-3" aria-hidden="true"></i>&#9;&#9;Votes</a
               >
@@ -74,13 +76,24 @@
               <div class="card-body">
                 <form>
                   <div class="form-group">
-                    <label class="small mb-1" for="inputName">Zone Name</label>
+                    <label for="exampleFormControlSelect1">Zone Name</label><select class="form-control"  id="inputName" >
+                      <option value="" disabled selected>Select Zone</option>
+                      <!-- <option></option> -->
+                      <!-- <option>3</option>
+                      <option>4</option>
+                      <option>5</option> -->
+                  </select>
+
+
+
+
+                    <!-- <label class="small mb-1" for="inputName">Zone Name</label>
                     <input
                       class="form-control"
                       id="inputName"
                       type="text"
                       placeholder="Enter your ZoneName"
-                    />
+                    /> -->
                   </div>
                   <!-- Form Row-->
                   <div class="form-row">
@@ -147,7 +160,7 @@
                       class="btn btn-primary active"
                       role="button"
                       aria-pressed="true"
-                      >Save Changes</a
+                      >Create</a
                     >
                     <a
                       href="./votes.html"

@@ -16,6 +16,8 @@ $(() => {
                 <td class="cell">`+ el.Party_Head + `</td>
                 <td class="cell">`+ el.MLA_Count + `</td>
          <td class="cell">`+ el.MP_Count + `</td>
+         <td class="cell"><i class="fa fa-pencil" aria-hidden="true"></i></td>
+
                 </tr>`
                 $('#party').append(tr);
             });
@@ -64,6 +66,7 @@ $(() => {
                 <td class="cell">`+ el.candidate_Name + `</td>
                 <td class="cell">`+ el.zone_Name + `</td>
                 <td class="cell">`+ el.vote + `</td>
+         <td class="cell"><i class="fa fa-pencil" aria-hidden="true"></i></td>
                 </tr>`
                 $('#vote').append(tr);
             });
@@ -93,8 +96,36 @@ $(() => {
                 <td class="cell">`+ el.Qualification + `</td>
                
                 <td class="cell">`+ el.Nationality + `</td>
+         <td class="cell"><i class="fa fa-pencil" aria-hidden="true"></i></td>
+
                 </tr>`
                 $('#cand').append(tr);
+            });
+        },
+    });
+});
+
+
+// for zones==================
+
+$(() => {
+    $.ajax({
+        url: "http://localhost:8000/zonelist/get",
+        success: function (result) {
+            var i = 1;
+            $('#zone').html('');
+            result.forEach((el) => {
+
+                let tr = `<tr class="row1">
+                <td class="cell">`+ i++ + `</td>
+                <td class="cell">`+ el.zone_Name + `</td>
+                <td class="cell">`+ el.candidate_Name + `</td>
+                <td class="cell">`+ el.party_Name + `</td>
+               
+         <td class="cell"><i class="fa fa-pencil" aria-hidden="true"></i></td>
+
+                </tr>`
+                $('#zone').append(tr);
             });
         },
     });
